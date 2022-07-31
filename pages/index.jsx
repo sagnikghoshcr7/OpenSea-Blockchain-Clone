@@ -1,6 +1,3 @@
-import { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
 import { useEffect } from "react";
 
 import { useWeb3 } from "@3rdweb/hooks";
@@ -65,8 +62,15 @@ export default function Home() {
           >
             Connect Wallet
           </button>
-          <div className={style.details}>
-            You need Chrome to be
+          <div className={style.details} style={{ color: "#fff" }}>
+            You need{" "}
+            <a
+              className="text-[#1868b7]"
+              href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn"
+            >
+              <span style={{ color: "#4e97e0" }}>Metamask</span>
+            </a>{" "}
+            to be
             <br /> able to run this app.
           </div>
         </div>

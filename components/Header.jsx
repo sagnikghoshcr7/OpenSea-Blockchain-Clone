@@ -19,8 +19,8 @@ const style = {
 };
 
 const Header = () => {
-  let val = process.env.NEXT_PUBLIC_BORED_APE_YACHT_CLUB
-  let loc = "/collections/"+val;
+  let val = process.env.NEXT_PUBLIC_BORED_APE_YACHT_CLUB;
+  let loc = "/collections/" + val;
   return (
     <div className={style.wrapper}>
       <Link href="/">
@@ -42,12 +42,20 @@ const Header = () => {
         <Link href={loc}>
           <div className={style.headerItem}>Collections</div>
         </Link>
-        <div className={style.headerItem}>Stats</div>
-        <div className={style.headerItem}>Resources</div>
-        <div className={style.headerItem}>Create</div>
-        <div className={style.headerIcon}>
-          <CgProfile />
-        </div>
+        <Link href="https://opensea.io/rankings">
+          <div className={style.headerItem}>Stats</div>
+        </Link>
+        <Link href="https://support.opensea.io">
+          <div className={style.headerItem}>Resources</div>
+        </Link>
+        <Link href="https://opensea.io/asset/create">
+          <div className={style.headerItem}>Create</div>
+        </Link>
+        <Link href="https://opensea.io/account">
+          <div className={style.headerIcon}>
+            <CgProfile />
+          </div>
+        </Link>
         <div className={style.headerIcon}>
           <MdOutlineAccountBalanceWallet />
         </div>

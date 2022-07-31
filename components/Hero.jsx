@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const style = {
   wrapper: `relative`,
@@ -30,8 +31,12 @@ const Hero = () => {
               OpenSea is the world&apos;s first and largest NFT marketplace
             </div>
             <div className={style.ctaContainer}>
-              <button className={style.accentedButton}>Explore</button>
-              <button className={style.button}>Create</button>
+              <Link href="https://opensea.io/explore-collections">
+                <button className={style.accentedButton}>Explore</button>
+              </Link>
+              <Link href="https://opensea.io/asset/create">
+                <button className={style.button}>Create</button>
+              </Link>
             </div>
           </div>
           <div className={style.cardContainer}>
@@ -47,12 +52,12 @@ const Hero = () => {
                 alt=""
               />
               <div className={style.author}>
-                <div className={style.name}>Jolly</div>
+                <div className={style.name}>Drippies</div>
                 <a
                   className="text-[#1868b7]"
-                  href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/2324922113504035910649522729980423429926362207300810036887725141691069366277"
+                  href="https://opensea.io/assets/solana/5TuQFLRSPMCLBGd8pppYEBWpCbPUNvghS7e7CLVSLTcQ"
                 >
-                  hola-kanola
+                  Drippieverse_Deployer
                 </a>
               </div>
             </div>
