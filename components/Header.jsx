@@ -19,6 +19,8 @@ const style = {
 };
 
 const Header = () => {
+  let val = process.env.NEXT_PUBLIC_BORED_APE_YACHT_CLUB
+  let loc = "/collections/"+val;
   return (
     <div className={style.wrapper}>
       <Link href="/">
@@ -37,7 +39,7 @@ const Header = () => {
         />
       </div>
       <div className={style.headerItems}>
-        <Link href="/collections/0x160eDA573231b218547bA8102Cb21AaEA6c8F46B">
+        <Link href={loc}>
           <div className={style.headerItem}>Collections</div>
         </Link>
         <div className={style.headerItem}>Stats</div>
